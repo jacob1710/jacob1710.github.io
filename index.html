@@ -11,9 +11,11 @@
     <title>StuBank</title>
     <link href="css/halfmoon.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.waves.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 
 <body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-set-preferred-mode-onload="true">
@@ -55,14 +57,15 @@
             </div>
             <div class="card shadow ">
                 <a class="anchor" id="web"></a>
-                <h1>Web Applications</h1>
+                <h1>Web Development</h1>
                 <div class="offer-flex">
                     <div class="card shadow ">
                         <div class="w-400 mw-full">
                             <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
                             <div class="card p-0">
                                 <!-- p-0 = padding: 0 -->
-                                <img src="assets/web/StuBankMain.png" class="img-fluid rounded-top" alt="StuBnakMain">
+
+                                <a data-lightbox="image-1" data-title="StuBank Home Page" href="assets/web/StuBankMain.png"><img src="assets/web/StuBankMain.png" class="img-fluid rounded-top" alt="StuBankMain" /> </a>
                                 <!-- rounded-top = rounded corners on the top -->
                                 <!-- Nested content container inside card -->
                                 <div class="content">
@@ -70,7 +73,7 @@
                                         StuBank
                                     </h2>
                                     <p class="text-muted">
-                                        Student Banking system with integrated machine learning, and personalised stories.
+                                        Student Banking system with integrated machine learning, and personalised stories. Using Python and the Flask Framework, JavaScript, and the database stored on Google Cloud.
                                     </p>
                                     <div class="text-right">
                                         <!-- text-right = text-align: right -->
@@ -85,15 +88,15 @@
                             <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
                             <div class="card p-0">
                                 <!-- p-0 = padding: 0 -->
-                                <img src="assets/web/StuBankMain.png" class="img-fluid rounded-top" alt="StuBnakMain">
+                                <a data-lightbox="image-2" data-title="Village Hall Home Page" href="assets/web/VillageHallBookingHome.png"><img src="assets/web/VillageHallBookingHome.png" class="img-fluid rounded-top" alt="VillageHallPage" /> </a>
                                 <!-- rounded-top = rounded corners on the top -->
                                 <!-- Nested content container inside card -->
                                 <div class="content">
                                     <h2 class="content-title">
-                                        Title of the article
+                                        Venue Booking System
                                     </h2>
                                     <p class="text-muted">
-                                        Subtitle that hooks the reader and prompts them to click on the read more button.
+                                        Venue booking system using Python and the Flask framework,
                                     </p>
                                     <div class="text-right">
                                         <!-- text-right = text-align: right -->
@@ -108,20 +111,16 @@
                             <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
                             <div class="card p-0">
                                 <!-- p-0 = padding: 0 -->
-                                <img src="assets/web/StuBankMain.png" class="img-fluid rounded-top" alt="StuBnakMain">
+                                <img src="assets/web/technicalDocs.png" class="img-fluid rounded-top" alt="StuBnakMain">
                                 <!-- rounded-top = rounded corners on the top -->
                                 <!-- Nested content container inside card -->
                                 <div class="content">
                                     <h2 class="content-title">
-                                        Title of the article
+                                        Technical Documentation Page
                                     </h2>
                                     <p class="text-muted">
-                                        Subtitle that hooks the reader and prompts them to click on the read more button.
+                                        Technical documentation page designed and styled as part of my responsive web design cert
                                     </p>
-                                    <div class="text-right">
-                                        <!-- text-right = text-align: right -->
-                                        <a href="#" class="btn">Read more</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -254,6 +253,7 @@
         });
     </script>
 
+    <script src="js/lightbox-plus-jquery.js"></script>
 
 </body>
 
