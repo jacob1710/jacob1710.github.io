@@ -164,6 +164,9 @@ a.anchor {
     .index-h1 {
         font-size: 30px;
     }
+    .offer-flex div {
+        width: 80%;
+    }
     /*.icon-img {*/
     /*    position: relative;*/
     /*    float: none;*/
