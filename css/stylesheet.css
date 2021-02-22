@@ -165,7 +165,9 @@ a.anchor {
         font-size: 30px;
     }
     .offer-flex div {
-        width: 80%;
+        padding: 0px;
+        width: 90%;
+        margin: 0.5em;
     }
     /*.icon-img {*/
     /*    position: relative;*/
