@@ -52,19 +52,41 @@
                 <h1 class="content-title font-size-24">StuBank</h1>
                 <p>Stubank was a project created as part of a team software engineering module in which as part of a group of 5 we created a student banking web application, with machine learning implemented analysing transactions to prevent fraudulent transactions
                     from going through. The styling of the website used the Halfmoon css framework, and we created our own custom stylesheet to modify elements to adjust it to our designs. </p>
-                <figure>
-                    <img src="assets/web/StuBankMain.png" class="img-fluid" alt="StuBankMain">
-                    <figcaption>This is a screenshot of the main stubank webpage. </figcaption>
-                </figure>
-                <hr>
-                <figure>
-                    <img src="assets/web/StuBankiPhone12Dark.png" class="img-fluid" alt="StuBankTesting">
-                    <figcaption>Our testing of the application using BrowserStack on an iPhone 12. </figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/web/StuBankStories.png" class="img-fluid" alt="StuBankStories">
-                    <figcaption>Stories feature of the application, one of the key student focussed features. </figcaption>
-                </figure>
+                <div>
+                    <hr>
+                    <h2 class="content-title font-size-18">Machine Learning</h2>
+                    <p>The machine learning was one of the main parts of the system, and was used as to prevent any transactions from occurring that were fraudulent. It was our job to decide what fraudulent actually meant and how we would go about preventing
+                        those transactions. We decided to use several measures to try and distinguish normal transactions from abnormal transactions: </p>
+                    <ul>
+                        <li>
+                            Comparing the location of the purchase with the users previous transactions to try and determine their usual spending habits and work out if it was in an unusual location for this user.
+                        </li>
+                        <li>
+                            Comparing the time and value of the the purchase compared to their usual amounts by creating clusters of their previous times and amounts and analysing whether the new purchase would be part of any of these.
+                        </li>
+                        <li>
+                            Using all these methods to influence a value on how abnormal this transaction is, which ultimately determines whether we block it or not.
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <hr>
+                    <h2 class="content-title font-size-18">Screenshots</h2>
+
+                    <figure>
+                        <img src="assets/web/StuBankMain.png" class="img-fluid" alt="StuBankMain">
+                        <figcaption>This is a screenshot of the main stubank webpage. </figcaption>
+                    </figure>
+                    <hr>
+                    <figure>
+                        <img src="assets/web/StuBankiPhone12Dark.png" class="img-fluid" alt="StuBankTesting">
+                        <figcaption>Our testing of the application using BrowserStack on an iPhone 12. </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/web/StuBankStories.png" class="img-fluid" alt="StuBankStories">
+                        <figcaption>Stories feature of the application, one of the key student focussed features. </figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
         <nav class="navbar navbar-fixed-bottom ">
