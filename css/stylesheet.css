@@ -99,6 +99,10 @@ a.anchor {
     visibility: hidden;
 }
 
+.machine-learning-img {
+    max-width: 450px;
+}
+
 
 /*#chart-div{*/
 
