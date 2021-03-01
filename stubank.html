@@ -11,6 +11,7 @@
     <title>StuBank</title>
     <link href="css/halfmoon.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.waves.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -72,18 +73,17 @@
                 <div>
                     <hr>
                     <h2 class="content-title font-size-18">Screenshots</h2>
-
                     <figure>
-                        <img src="assets/web/StuBankMain.png" class="img-fluid" alt="StuBankMain">
+                        <a data-lightbox="image-1" data-title="StuBankMain" href="assets/web/StuBankMain.png"><img src="assets/web/StuBankMain.png" class="img-fluid rounded-top" alt="StuBankMain" /> </a>
                         <figcaption>This is a screenshot of the main stubank webpage. </figcaption>
                     </figure>
                     <hr>
                     <figure>
-                        <img src="assets/web/StuBankiPhone12Dark.png" class="img-fluid" alt="StuBankTesting">
+                        <a data-lightbox="image-1" data-title="StuBankTesting" href="assets/web/StuBankiPhone12Dark.png"><img src="assets/web/StuBankiPhone12Dark.png" class="img-fluid rounded-top" alt="StuBankTesting" /> </a>
                         <figcaption>Our testing of the application using BrowserStack on an iPhone 12. </figcaption>
                     </figure>
                     <figure>
-                        <img src="assets/web/StuBankStories.png" class="img-fluid" alt="StuBankStories">
+                        <a data-lightbox="image-1" data-title="StuBankStories" href="assets/web/StuBankStories.png"><img src="assets/web/StuBankStories.png" class="img-fluid rounded-top" alt="StuBankStories" /> </a>
                         <figcaption>Stories feature of the application, one of the key student focussed features. </figcaption>
                     </figure>
                 </div>
@@ -142,6 +142,7 @@
         });
     </script>
 
+    <script src="js/lightbox-plus-jquery.js"></script>
 
 </body>
 
