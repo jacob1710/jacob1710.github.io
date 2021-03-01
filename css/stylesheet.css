@@ -1,4 +1,4 @@
-/*
+    /*
 Style Sheet for Portfolio
 
 version: 1.0
@@ -6,187 +6,153 @@ last modified: 16.02.2021 by Jacob Scase
 author: Jacob Scae
 email: J.Scase@ncl.ac.uk
  */
-
-.card-primary {
-    /* Card (light mode only) */
-    color: #cfe7fd;
-    background-color: #45a3fb;
-    /* Card (dark mode only) */
-}
-
-.dark-mode .card-primary {
-    color: #45a3fb;
-    background-color: #172636;
-    border-color: #0d518f;
-}
-
-.dark-mode .qr-card {
-    background-color: white;
-}
-
-.dark-mode .card-img-bg {
-    background-color: white;
-}
-
-.icon-img {
-    position: relative;
-    float: left;
-    /* Adjust these values accordingly */
-    top: 10px;
-    left: 5px;
-}
-
-.offer-flex {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.text-in-vanta {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-#qrcode {
-    width: 180px;
-    height: 180px;
-}
-
-#qrcode img {
-    border-color: white;
-    border: 5px;
-    background-color: white;
-    margin-bottom: 15px;
-}
-
-
-/*#report{*/
-
-
-/*    width: 100%;*/
-
-
-/*}*/
-
-
-/* @media only screen and (max-width: 1200px) {*/
-
-
-/*     #report{*/
-
-
-/*         width: 50%;*/
-
-
-/*     }*/
-
-
-/*  }*/
-
-.bottom-text {
-    font-size: small;
-}
-
-a.anchor {
-    display: block;
-    position: relative;
-    top: -200px;
-    visibility: hidden;
-}
-
-.machine-learning-img {
-    max-width: 450px;
-}
-
-
-/*#chart-div{*/
-
-
-/*    align-items: center;*/
-
-
-/*    justify-content: center;*/
-
-
-/*    background-color: white;*/
-
-
-/*}*/
-
-
-/*.dark-mode #chart-div{*/
-
-
-/*    background-color: white;*/
-
-
-/*}*/
-
-
-/* IE specific code, issue with home page graphics showing up*/
-
-@media screen and (-ms-high-contrast: active),
-(-ms-high-contrast: none) {
-    .index-h1 {
-        color: black;
+    
+    .card-primary {
+        /* Card (light mode only) */
+        color: #cfe7fd;
+        background-color: #45a3fb;
+        /* Card (dark mode only) */
     }
-    .index-p {
-        color: black;
+    
+    .dark-mode .card-primary {
+        color: #45a3fb;
+        background-color: #172636;
+        border-color: #0d518f;
     }
-    .dark-mode .index-h1 {
+    
+    .dark-mode .qr-card {
+        background-color: white;
+    }
+    
+    .dark-mode .card-img-bg {
+        background-color: white;
+    }
+    
+    .icon-img {
+        position: relative;
+        float: left;
+        /* Adjust these values accordingly */
+        top: 10px;
+        left: 5px;
+    }
+    
+    .offer-flex {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .text-in-vanta {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         color: white;
     }
-    .dark-mode .index-p {
-        color: white;
+    
+    #qrcode {
+        width: 180px;
+        height: 180px;
     }
-}
-
-@media only screen and (max-width: 700px) {
-    h1 {
-        font-size: 14px;
+    
+    #qrcode img {
+        border-color: white;
+        border: 5px;
+        background-color: white;
+        margin-bottom: 15px;
     }
-    h2 {
-        font-size: 12px;
-    }
-    td {
-        font-size: 12px;
-    }
-    th {
-        font-size: 12px;
-    }
-    .card-primary h1 {
-        font-size: 13px;
-    }
-    .table-class {
-        padding: 0%;
-    }
-    .index-h1 {
-        font-size: 30px;
-    }
-    .offer-flex div {
-        padding: 0px;
-        width: 90%;
-        margin: 0.5em;
-    }
-    /*.icon-img {*/
-    /*    position: relative;*/
-    /*    float: none;*/
-    /*    !* Adjust these values accordingly *!*/
-    /*    top: 10px;*/
-    /*    left: 5px;*/
+    /*#report{*/
+    /*    width: 100%;*/
     /*}*/
-    .icon h2 {
-        font-size: 30px;
+    /* @media only screen and (max-width: 1200px) {*/
+    /*     #report{*/
+    /*         width: 50%;*/
+    /*     }*/
+    /*  }*/
+    
+    .bottom-text {
+        font-size: small;
     }
-    .storyh1 {
-        font-size: 25px;
+    
+    a.anchor {
+        display: block;
+        position: relative;
+        top: -200px;
+        visibility: hidden;
     }
-    .navbar-text {
-        font-size: 9px;
+    
+    .machine-learning-img {
+        /* max-width: 450px; */
     }
-}
+    /*#chart-div{*/
+    /*    align-items: center;*/
+    /*    justify-content: center;*/
+    /*    background-color: white;*/
+    /*}*/
+    /*.dark-mode #chart-div{*/
+    /*    background-color: white;*/
+    /*}*/
+    /* IE specific code, issue with home page graphics showing up*/
+    
+    @media screen and (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+        .index-h1 {
+            color: black;
+        }
+        .index-p {
+            color: black;
+        }
+        .dark-mode .index-h1 {
+            color: white;
+        }
+        .dark-mode .index-p {
+            color: white;
+        }
+    }
+    
+    @media only screen and (max-width: 700px) {
+        h1 {
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 12px;
+        }
+        td {
+            font-size: 12px;
+        }
+        th {
+            font-size: 12px;
+        }
+        .card-primary h1 {
+            font-size: 13px;
+        }
+        .table-class {
+            padding: 0%;
+        }
+        .index-h1 {
+            font-size: 30px;
+        }
+        .offer-flex div {
+            padding: 0px;
+            width: 90%;
+            margin: 0.5em;
+        }
+        /*.icon-img {*/
+        /*    position: relative;*/
+        /*    float: none;*/
+        /*    !* Adjust these values accordingly *!*/
+        /*    top: 10px;*/
+        /*    left: 5px;*/
+        /*}*/
+        .icon h2 {
+            font-size: 30px;
+        }
+        .storyh1 {
+            font-size: 25px;
+        }
+        .navbar-text {
+            font-size: 9px;
+        }
+    }
