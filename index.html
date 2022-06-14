@@ -26,6 +26,7 @@
             <div class="sidebar-menu">
                 <h5 class="sidebar-title">Sections</h5>
                 <a href="#top" class="sidebar-link">Most Notable Projects</a>
+                <a href="#further-projects" class="sidebar-link">Further Development Projects</a>
             </div>
         </div>
         <nav class="navbar">
@@ -168,62 +169,77 @@
                             </div>
                         </div>
                     </div>
+                    <hr>
+                    <h3 class="text-center">Further Development Projects</h3>
+                    <a class="anchor" id="further-projects"></a>
+                    <div class="card">
+                        <p>
+                            Further information about projects I have done is available in the web and app development pages of this website
+                        </p>
+                        <br>
+                        <div class="card">
+                            <div class="text-center">
+                                <a href="app-development.html" class="btn">App Development</a>
+                                <a href="web-development.html" class="btn">Web Development</a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-            <nav class="navbar navbar-static-bottom ">
-                <div class="container-fluid ">
-                    <button class="btn btn-primary bottom-button text-center bottom-text " type="button " onclick="toggleDark() ">Toggle Darkmode!
+                <nav class="navbar navbar-static-bottom ">
+                    <div class="container-fluid ">
+                        <button class="btn btn-primary bottom-button text-center bottom-text " type="button " onclick="toggleDark() ">Toggle Darkmode!
                 </button>
 
-                    <!-- JavaScript -->
-                    <script type="text/javascript ">
-                        // Dark mode toggle
-                        function toggleDark() {
-                            halfmoon.toggleDarkMode();
-                        }
-                    </script>
-                    <ul class="navbar-nav ml-auto ">
-                        <!-- ml-auto = margin-left: auto -->
-                        <li class="nav-item ">
-                            <a href="mailto:jacobscase@hotmail.com " class="nav-link bottom-text ">Contact</a>
-                        </li>
-                    </ul>
-                    <!-- Navbar text -->
-                    <span class="navbar-text ">
+                        <!-- JavaScript -->
+                        <script type="text/javascript ">
+                            // Dark mode toggle
+                            function toggleDark() {
+                                halfmoon.toggleDarkMode();
+                            }
+                        </script>
+                        <ul class="navbar-nav ml-auto ">
+                            <!-- ml-auto = margin-left: auto -->
+                            <li class="nav-item ">
+                                <a href="mailto:jacobscase@hotmail.com " class="nav-link bottom-text ">Contact</a>
+                            </li>
+                        </ul>
+                        <!-- Navbar text -->
+                        <span class="navbar-text ">
           </span>
-                </div>
-            </nav>
+                    </div>
+                </nav>
+            </div>
+            <!-- Content wrapper end -->
+
+
         </div>
-        <!-- Content wrapper end -->
+        <!-- Page wrapper end -->
 
+        <!-- Halfmoon JS -->
+        <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js "></script>
 
-    </div>
-    <!-- Page wrapper end -->
+        <script>
+            VANTA.WAVES({
+                el: "#vantajs ",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0xbe2f26,
+                zoom: 0.72
+            })
+        </script>
+        <script>
+            ScrollReveal().reveal('.content-wrapper', {
+                delay: 400
+            });
+        </script>
 
-    <!-- Halfmoon JS -->
-    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js "></script>
-
-    <script>
-        VANTA.WAVES({
-            el: "#vantajs ",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0xbe2f26,
-            zoom: 0.72
-        })
-    </script>
-    <script>
-        ScrollReveal().reveal('.content-wrapper', {
-            delay: 400
-        });
-    </script>
-
-    <script src="js/lightbox-plus-jquery.js"></script>
+        <script src="js/lightbox-plus-jquery.js"></script>
 
 </body>
 
