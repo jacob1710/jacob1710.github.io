@@ -19,12 +19,30 @@
 
 <body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-set-preferred-mode-onload="true">
 
-    <div class="page-wrapper with-navbar with-navbar-fixed-bottom">
+    <div class="page-wrapper with-navbar with-sidebar" data-sidebar-type="overlayed-sm-and-down">
         <div class="sticky-alerts"></div>
+        <div class="sidebar">
+            <div class="sidebar-menu">
+                <h5 class="sidebar-title">Sections</h5>
+                <div class="sidebar-divider"></div>
+                <h6 class="sidebar-title">StuBank</h6>
+                <a href="#ml" class="sidebar-link">Machine Learning</a>
+                <a href="#screenshots" class="sidebar-link">Screenshots</a>
+                <div class="sidebar-divider"></div>
+                <h5 class="sidebar-title">Venue Booking System</h5>
+                <a href="#venue" class="sidebar-link">Screenshots</a>
+
+
+            </div>
+        </div>
         <nav class="navbar">
             <ul class="navbar-nav d-none d-md-flex">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                <!-- Toggle sidebar -->
+                <button class="btn" type="button" onclick="halfmoon.toggleSidebar()">
+                    ☰
+                </button>
+                <li class="nav-item ">
+                    <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item active">
                     <a href="web-development.html" class="nav-link">Web Development</a>
@@ -34,6 +52,9 @@
                 </li>
             </ul>
             <div class="navbar-content d-md-none ml-auto">
+                <button class="btn" type="button" onclick="halfmoon.toggleSidebar()">
+                    ☰
+                </button>
                 <div class="dropdown with-arrow">
                     <button class="btn" data-toggle="dropdown" type="button" id="navbar-dropdown-toggle-btn-1">
                     Menu
@@ -55,6 +76,7 @@
                     from going through. The styling of the website used the Halfmoon css framework, and we created our own custom stylesheet to modify elements to adjust it to our designs. </p>
                 <div>
                     <hr>
+                    <a class="anchor" id="ml"></a>
                     <h2 class="content-title font-size-18">Machine Learning</h2>
                     <p>The machine learning was one of the main parts of the system, and was used as to prevent any transactions from occurring that were fraudulent. It was our job to decide what fraudulent actually meant and how we would go about preventing
                         those transactions. We decided to use several measures to try and distinguish normal transactions from abnormal transactions: </p>
@@ -78,19 +100,46 @@
                 </div>
                 <div>
                     <hr>
+                    <a class="anchor" id="screenshots"></a>
                     <h2 class="content-title font-size-18">Screenshots</h2>
                     <figure>
-                        <a data-lightbox="image-1" data-title="StuBankMain" href="assets/web/StuBankMain.png"><img src="assets/web/StuBankMain.png" class="img-fluid rounded-top" alt="StuBankMain" /> </a>
+                        <a data-lightbox="image-1" data-title="StuBankMain" href="assets/web/StuBankMain.png"><img src="assets/web/StuBankMain.png" class="img-fluid rounded-top web-dev-img" alt="StuBankMain" /> </a>
                         <figcaption>This is a screenshot of the main stubank webpage. </figcaption>
                     </figure>
                     <hr>
                     <figure>
-                        <a data-lightbox="image-1" data-title="StuBankTesting" href="assets/web/StuBankiPhone12Dark.png"><img src="assets/web/StuBankiPhone12Dark.png" class="img-fluid rounded-top" alt="StuBankTesting" /> </a>
-                        <figcaption>Our testing of the application using BrowserStack on an iPhone 12. </figcaption>
+                        <a data-lightbox="image-1" data-title="StuBankTesting" href="assets/web/StuBankiPhone12Dark.png"><img src="assets/web/StuBankiPhone12Dark.png" class="img-fluid rounded-top web-dev-img" alt="StuBankTesting" /> </a>
+                        <figcaption>This screenshot shows one set of testing of the application using BrowserStack on an iPhone 12. We tested on multiple different devices and operating systems to make sure the webpage displayed as intended on all platforms. Since
+                            StuBank was a student focussed platform, we prioritised mobile device testing.</figcaption>
                     </figure>
                     <figure>
-                        <a data-lightbox="image-1" data-title="StuBankStories" href="assets/web/StuBankStories.png"><img src="assets/web/StuBankStories.png" class="img-fluid rounded-top" alt="StuBankStories" /> </a>
-                        <figcaption>Stories feature of the application, one of the key student focussed features. </figcaption>
+                        <a data-lightbox="image-1" data-title="StuBankStories" href="assets/web/StuBankStories.png"><img src="assets/web/StuBankStories.png" class="img-fluid rounded-top web-dev-img" alt="StuBankStories" /> </a>
+                        <figcaption>This screenshot shows the stories feature of the application, one of the key student focussed features. Different pieces of information were shown to the user, and the user can tap on the right of the story to change to the next
+                            one, similar to other story implementations in popular apps. </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="card shadow">
+                <a class="anchor" id="venue"></a>
+                <h1 class="content-title font-size-24">Venue Booking System</h1>
+                <p>The venue booking system was created as a coursework deliverable for A Level Computer Science. The system was built using python for the backend, which connected to a MySQL database. The web front end was built using the Flask web framework
+                    and was styled using custom CSS.</p>
+                <div>
+                    <hr>
+                    <h2 class="content-title font-size-18">Screenshots</h2>
+                    <figure>
+                        <a data-lightbox="image-2" data-title="VenueMain" href="assets/web/VillageHallBookingHome.png"><img src="assets/web/VillageHallBookingHome.png" class="img-fluid rounded-top web-dev-img" alt="VenueMain" /></a>
+                        <figcaption>This is a screenshot of the booking system homepage. </figcaption>
+                    </figure>
+                    <hr>
+                    <figure>
+                        <a data-lightbox="image-2" data-title="VenueDay" href="assets/web/VillageHallBookingOnDay.png"><img src="assets/web/VillageHallBookingOnDay.png" class="img-fluid rounded-top web-dev-img" alt="VenueDay" /></a>
+                        <figcaption>This is a screenshot showing when the venue is available on a certain day. </figcaption>
+                    </figure>
+                    <hr>
+                    <figure>
+                        <a data-lightbox="image-2" data-title="VenueCreate" href="assets/web/VillageHallCreateBooking.png"><img src="assets/web/VillageHallCreateBooking.png" class="img-fluid rounded-top web-dev-img" alt="VenueCreate" /></a>
+                        <figcaption>This is a screenshot showing how a user would create a booking, by selecting a date, selecting one of the available times, and clicking create. </figcaption>
                     </figure>
                 </div>
             </div>

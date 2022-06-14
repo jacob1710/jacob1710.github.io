@@ -20,12 +20,24 @@
 
 <body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-set-preferred-mode-onload="true">
 
-    <div class="page-wrapper with-navbar">
+    <div class="page-wrapper with-navbar with-sidebar" data-sidebar-type="overlayed-sm-and-down">
         <div class="sticky-alerts"></div>
+        <div class="sidebar">
+            <div class="sidebar-menu">
+                <h5 class="sidebar-title">Sections</h5>
+                <a href="#stubank" class="sidebar-link">StuBank</a>
+                <a href="#" class="sidebar-link">n</a>
+                <a href="#" class="sidebar-link"></a>
+            </div>
+        </div>
         <nav class="navbar">
             <ul class="navbar-nav d-none d-md-flex">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                <!-- Toggle sidebar -->
+                <button class="btn" type="button" onclick="halfmoon.toggleSidebar()">
+                    ☰
+                </button>
+                <li class="nav-item ">
+                    <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item ">
                     <a href="web-development.html" class="nav-link">Web Development</a>
@@ -35,6 +47,9 @@
                 </li>
             </ul>
             <div class="navbar-content d-md-none ml-auto">
+                <button class="btn" type="button" onclick="halfmoon.toggleSidebar()">
+                    ☰
+                </button>
                 <div class="dropdown with-arrow">
                     <button class="btn" data-toggle="dropdown" type="button" id="navbar-dropdown-toggle-btn-1">
                     Menu
@@ -129,93 +144,6 @@
                                     </h2>
                                     <p class="text-muted">
                                         Realtime chat application built upon Google Firebase
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <hr>
-                <a class="anchor" id="web"></a>
-                <h3 class="text-center">Web Development</h3>
-                <div class="offer-flex">
-                    <div class="card shadow">
-                        <div class="w-400 mw-full">
-                            <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
-                            <div class=" p-0">
-                                <!-- p-0 = padding: 0 -->
-
-                                <a data-lightbox="image-1" data-title="StuBank Home Page" href="assets/web/StuBankMain.png"><img src="assets/web/StuBankMain.png" class="img-fluid rounded-top" alt="StuBankMain" /> </a>
-                                <!-- rounded-top = rounded corners on the top -->
-                                <!-- Nested content container inside card -->
-                                <div class="content">
-                                    <h2 class="content-title">
-                                        StuBank
-                                    </h2>
-                                    <p class="text-muted">
-                                        Student Banking system with integrated machine learning, and personalised stories. Using Python and the Flask Framework, JavaScript, and the database stored on Google Cloud.
-                                    </p>
-                                    <div class="text-right">
-                                        <!-- text-right = text-align: right -->
-                                        <a href="stubank.html" class="btn">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card shadow ">
-                        <div class="w-400 mw-full">
-                            <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
-                            <div class=" p-0">
-                                <!-- p-0 = padding: 0 -->
-                                <a data-lightbox="image-2" data-title="Village Hall Home Page" href="assets/web/VillageHallBookingHome.png"><img src="assets/web/VillageHallBookingHome.png" class="img-fluid rounded-top" alt="VillageHallPage" /> </a>
-                                <!-- rounded-top = rounded corners on the top -->
-                                <!-- Nested content container inside card -->
-                                <div class="content">
-                                    <h2 class="content-title">
-                                        Venue Booking System
-                                    </h2>
-                                    <p class="text-muted">
-                                        Venue booking system using Python and the Flask framework,
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card shadow ">
-                        <div class="w-400 mw-full">
-                            <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
-                            <div class=" p-0">
-                                <!-- p-0 = padding: 0 -->
-                                <a data-lightbox="image-4" data-title="Python Code Parser Displayer" href="assets/web/pythonCodeParserDisplayer.png"><img src="assets/web/pythonCodeParserDisplayer.png" class="img-fluid rounded-top" alt="pythonCodeParserDisplayer" /> </a>
-                                <!-- rounded-top = rounded corners on the top -->
-                                <!-- Nested content container inside card -->
-                                <div class="content">
-                                    <h2 class="content-title">
-                                        Python Code displayer parser
-                                    </h2>
-                                    <p class="text-muted">
-                                        A Flask application that displays the code of the other parts of the application in sections
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card shadow ">
-                        <div class="w-400 mw-full">
-                            <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
-                            <div class=" p-0">
-                                <!-- p-0 = padding: 0 -->
-                                <a data-lightbox="image-5" data-title="Technical Docs Page" href="assets/web/technicalDocs.png"><img src="assets/web/technicalDocs.png" class="img-fluid rounded-top" alt="technicalDocsPage" /> </a>
-                                <!-- rounded-top = rounded corners on the top -->
-                                <!-- Nested content container inside card -->
-                                <div class="content">
-                                    <h2 class="content-title">
-                                        Technical Documentation Page
-                                    </h2>
-                                    <p class="text-muted">
-                                        Technical documentation page designed and styled as part of my responsive web design cert
                                     </p>
                                 </div>
                             </div>
